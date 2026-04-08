@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "@components/shared/Header.astro";
+import HeroImagen from "@sections/Hero.jsx"
+import About from "@sections/About.jsx";
+import DetailSection from "@sections/Features.jsx";
+import Card from "@components/ui/Card.astro";
+import Cta from "@components/ui/CallToAction.astro";
+import Footer from "@components/shared/Footer.astro";
+import "../styles/global.css";
+import HotelSostenible from "../assets/images/hotel-sostenible.jpg";
+---
+
+<Layout>
+	<Header />
+	<HeroImagen client:load />
+	<About client:visible imagePath={HotelSostenible.src} />
+	<DetailSection client:load />
+	<Card />
+	<Cta />
+	<Footer />
+</Layout>
+
+
+
+
+
+
+
