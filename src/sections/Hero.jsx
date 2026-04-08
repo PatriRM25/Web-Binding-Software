@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import bannerImg from '../assets/images/banner.jpg';
 
 
 export default function HeroImagen() {
@@ -8,7 +9,7 @@ export default function HeroImagen() {
                 initial={{ opacity: 0, scale: 1.05 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 2, ease: "easeOut" }}
-                src="/src/assets/images/banner.jpg"
+                src={bannerImg.src}
                 alt="Binding Software"
                 className="absolute inset-0 h-full w-full object-cover z-0"
             />
